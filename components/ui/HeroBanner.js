@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { BASE_PATH } from "@/lib/base";
 
 export default function HeroBanner({
   title,
   subtitle,
-  backgroundImage = "/background.webp",
+  backgroundImage = `${BASE_PATH}/background.webp`,
   cta,
 }) {
   return (
