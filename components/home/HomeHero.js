@@ -100,7 +100,7 @@ function ThumbnailImage({ num, index, onHover }) {
         }}
       >
         <Image
-          src={`/Thumbnails/thumb${num}.webp`}
+          src={`${BASE_PATH}/Thumbnails/thumb${num}.webp`}
           alt={`Thumbnail ${index + 1}`}
           fill
           className="object-cover"

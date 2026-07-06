@@ -1,8 +1,9 @@
+import { BASE_PATH } from "@/lib/base";
 import { CREDIT_GROUPS } from "@/lib/credits-data";
 
 const ICONS = {
-  twitter: "/twitter-icon.svg",
-  discord: "/discord-icon.svg",
+  twitter: `${BASE_PATH}/twitter-icon.svg`,
+  discord: `${BASE_PATH}/discord-icon.svg`,
 };
 
 function ContributorItem({ person }) {

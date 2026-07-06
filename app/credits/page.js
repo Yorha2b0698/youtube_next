@@ -1,3 +1,4 @@
+import { BASE_PATH } from "@/lib/base";
 import { PageLayout } from "@/components/layout";
 
 const creditsData = [
@@ -104,8 +105,8 @@ export default function Credits() {
                           <img
                             src={
                               credit.platform === 'twitter'
-                                ? '/twitter-icon.svg'
-                                : '/discord-icon.svg'
+                                ? `${BASE_PATH}/twitter-icon.svg`
+                                : `${BASE_PATH}/discord-icon.svg`
                             }
                             className="w-[46px] h-[46px] mx-1"
                             alt=""

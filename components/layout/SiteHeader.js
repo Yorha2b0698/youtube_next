@@ -15,9 +15,9 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { href: `${BASE_PATH}/`, label: 'Home', isHome: true },
-        { href: `${BASE_PATH}/team`, label: 'Our Team', forceReload: true },
-        { href: `${BASE_PATH}/resources`, label: 'Resources', forceReload: true },
+        { href: "/", label: 'Home', isHome: true },
+        { href: "/team", label: 'Our Team', forceReload: true },
+        { href: "/resources", label: 'Resources', forceReload: true },
     ];
 
     const handleHomeClick = (e) => {
@@ -50,7 +50,7 @@ export default function Header() {
             >
                 {/* LOGO */}
                 <img
-                    src="/logo-header.webp"
+                    src={`${BASE_PATH}/logo-header.webp`}
                     alt="Header Logo"
                     className="flex-shrink-0 w-[32px] h-[32px] sm:w-[42px] sm:h-[42px] mr-0.5 sm:mr-1 rounded-[8px] sm:rounded-[12px] object-cover object-center"
                     width={42}
@@ -63,7 +63,6 @@ export default function Header() {
                         <li key={link.href} className="m-0 p-0">
                             <Link
                                 href={link.href}
-                                onClick={link.isHome ? handleHomeClick : link.forceReload ? (e) => handleForceReload(e, link.href) : undefined}
                                 className="
                                     inline-flex items-center justify-center
                                     w-[75px] h-[34px] sm:w-[112px] sm:h-[44px] px-2 sm:px-4

@@ -1,3 +1,5 @@
+import { BASE_PATH } from "@/lib/base";
+
 // Graphic Design Tutorials Data
 export const graphicDesignTutorials = [
    {

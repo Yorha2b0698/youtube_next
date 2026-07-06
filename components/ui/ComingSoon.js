@@ -1,12 +1,12 @@
 'use client';
-
+import { BASE_PATH } from "@/lib/base";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function ComingSoon({
   title = "We're Extending Soon",
   description = "The YouTube Growth Guide is growing soon. Stay tuned!",
-  image = "/comming.webp",
+  image = `${BASE_PATH}/comming.webp`,
 }) {
   const [isLoaded, setIsLoaded] = useState(false);
 

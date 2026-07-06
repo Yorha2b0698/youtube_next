@@ -1,5 +1,5 @@
 "use client";
-
+import { BASE_PATH } from "@/lib/base";
 import Image from "next/image";
 import { HOME_PERKS, TEAM_MEMBERS } from "@/lib/site-config";
 import { StatsCounter } from "./HomeHero";
@@ -12,7 +12,7 @@ export default function AboutSection() {
     <>
       <div className="flex justify-center px-4 py-10 sm:py-22">
         <Image
-          src="/logo.svg"
+          src={`${BASE_PATH}/logo.svg`}
           alt="YouTube Growth Guide Logo"
           width={1200}
           height={400}
