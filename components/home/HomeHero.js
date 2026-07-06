@@ -1,5 +1,5 @@
 "use client";
-
+import { BASE_PATH } from "@/lib/base";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
